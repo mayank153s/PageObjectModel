@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-30T00:09:05 IST" name="Suite" finished-at="2025-05-30T00:09:25 IST" duration-ms="19792">
+  <suite started-at="2025-06-19T22:54:19 IST" name="Suite" finished-at="2025-06-19T22:54:33 IST" duration-ms="14187">
     <groups>
     </groups>
-    <test started-at="2025-05-30T00:09:05 IST" name="Test" finished-at="2025-05-30T00:09:25 IST" duration-ms="19792">
+    <test started-at="2025-06-19T22:54:19 IST" name="Test" finished-at="2025-06-19T22:54:33 IST" duration-ms="14187">
       <class name="maven.test.UltimateQATest">
-        <test-method signature="VerifyLandingPage()[pri:1, instance:maven.test.UltimateQATest@20b12f8a]" started-at="2025-05-30T00:09:06 IST" name="VerifyLandingPage" finished-at="2025-05-30T00:09:25 IST" duration-ms="19422" status="PASS">
+        <test-method signature="VerifyLandingPage()[pri:1, instance:maven.test.UltimateQATest@2f05be7f]" started-at="2025-06-19T22:54:19 IST" name="VerifyLandingPage" finished-at="2025-06-19T22:54:21 IST" duration-ms="2375" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyLandingPage -->
-        <test-method signature="GetHeaderElements()[pri:2, instance:maven.test.UltimateQATest@20b12f8a]" started-at="2025-05-30T00:09:25 IST" name="GetHeaderElements" finished-at="2025-05-30T00:09:25 IST" duration-ms="304" status="PASS">
+        <test-method signature="GetHeaderElements()[pri:2, instance:maven.test.UltimateQATest@2f05be7f]" started-at="2025-06-19T22:54:21 IST" name="GetHeaderElements" finished-at="2025-06-19T22:54:21 IST" duration-ms="348" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetHeaderElements -->
+        <test-method signature="TableData()[pri:3, instance:maven.test.UltimateQATest@2f05be7f]" started-at="2025-06-19T22:54:21 IST" name="TableData" finished-at="2025-06-19T22:54:33 IST" duration-ms="11404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TableData -->
       </class> <!-- maven.test.UltimateQATest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

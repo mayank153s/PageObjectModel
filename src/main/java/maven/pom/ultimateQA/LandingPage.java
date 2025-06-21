@@ -1,5 +1,6 @@
 package maven.pom.ultimateQA;
 
+import java.util.HashMap;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -25,6 +26,13 @@ public class LandingPage extends AbstractComponent {
 	@FindBy(xpath="//ul[@id=\"menu-main-menu\"]/li")
 	List<WebElement> headerElements;
 	
+	@FindBy(linkText = "Interactions with simple elements")
+	WebElement interActiveElementsPage;
+	
+	@FindBy(xpath="(//div[@class='et_pb_text_inner']/h2)[2]")
+	WebElement tableHeading;
+	
+	
 	public String validateURL() {
 		return driver.getCurrentUrl();
 	}
@@ -39,4 +47,23 @@ public class LandingPage extends AbstractComponent {
 	
 	}
 	
+	public void getTableDataHashMap() {
+		interActiveElementsPage.click();
+		ScrollUntilELementFound(tableHeading);
+		List<WebElement> rows = driver.findElements(By.xpath("(//div[@class='et_pb_text_inner'])[3]/table/tbody/tr"));
+		System.out.println(rows.size());
+		HashMap<String, String> map = new HashMap<String, String>();
+		
+//		we put try catch block as findElement throws NoSuchElementException for row[0](as it is a header and has 
+//		<th>tag not <td>tag and we are finding <td>tag in line61 )
+		for(WebElement row : rows) {
+			try {
+			map.put(row.findElement(By.xpath("td[1]")).getText(),row.findElement(By.xpath("td[3]")).getText());
+			}
+			catch (Exception e) {
+				// TODO: handle exception
+			}
+		}
+		System.out.println(map);
+	}
 }

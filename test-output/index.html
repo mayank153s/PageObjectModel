@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -105,6 +105,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="maven.test.UltimateQATest" class="method navigator-link" hash-for-method="GetHeaderElements">GetHeaderElements</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="maven.test.UltimateQATest" class="method navigator-link" hash-for-method="TableData">TableData</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -135,6 +140,13 @@
                   <a name="GetHeaderElements">
                   </a> <!-- GetHeaderElements -->
                   <span class="method-name">GetHeaderElements</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TableData">
+                  </a> <!-- TableData -->
+                  <span class="method-name">TableData</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -198,20 +210,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'VerifyLandingPage')
+data.setCell(0, 1, 'TableData')
 data.setCell(0, 2, 'maven.test.UltimateQATest')
-data.setCell(0, 3, 19422);
+data.setCell(0, 3, 11404);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'GetHeaderElements')
+data.setCell(1, 1, 'VerifyLandingPage')
 data.setCell(1, 2, 'maven.test.UltimateQATest')
-data.setCell(1, 3, 304);
+data.setCell(1, 3, 2375);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'GetHeaderElements')
+data.setCell(2, 2, 'maven.test.UltimateQATest')
+data.setCell(2, 3, 348);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -244,7 +260,11 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">GetHeaderElements</span>
-                <span class="method-start">19427 ms</span>
+                <span class="method-start">2381 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TableData</span>
+                <span class="method-start">2730 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

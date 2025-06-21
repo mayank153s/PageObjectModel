@@ -5,7 +5,7 @@
     <classes>
       <class name="maven.test.UltimateQATest">
         <methods>
-          <include name="GetHeaderElements"/>
+          <include name="TableData"/>
         </methods>
       </class> <!-- maven.test.UltimateQATest -->
     </classes>

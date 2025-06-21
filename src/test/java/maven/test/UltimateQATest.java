@@ -24,6 +24,13 @@ public class UltimateQATest extends BaseTest {
     public void GetHeaderElements() {
     	landingPage.verifyHeaderElements();
     }
+    
+    @Test(priority=3)
+    public void TableData() {
+    	landingPage.getTableDataHashMap();
+    }
+    
+    
 	
 	
 }
