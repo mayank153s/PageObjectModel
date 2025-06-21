@@ -5,16 +5,9 @@
     <classes>
       <class name="maven.test.UltimateQATest">
         <methods>
-          <include name="GetHeaderElements"/>
-          <include name="VerifyLandingPage"/>
+          <include name="TableData"/>
         </methods>
       </class> <!-- maven.test.UltimateQATest -->
-      <class name="maven.test.StandAloneTest">
-        <methods>
-          <include name="LoginFunctionality"/>
-          <include name="SearchProductFucntionality"/>
-        </methods>
-      </class> <!-- maven.test.StandAloneTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
